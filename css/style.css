@@ -35,6 +35,9 @@ body{
 .navbar-nav li a:hover{
   color: #74A82B !important;
 }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path fill='none' stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 6h14M3 12h14M3 18h14'/></svg>") !important;
+}
 
 /* HERO SLIDER */
 .carousel-item img {
@@ -193,8 +196,10 @@ section {
 }
 
 .btn-style-one:hover{
-  background-color: #0794c9;
-  /* color: #ffffff; */
+  /* background-color: #0794c9; */
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.966);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .about-section{
   position: relative;
@@ -202,7 +207,7 @@ section {
 }
 
 .about-section .sec-title{
-  margin-bottom: 45px;
+  margin: 40px 0 45px 0;
 }
 
 .about-section .content-column{
@@ -507,20 +512,27 @@ section {
     color:#f91942;
 }
 .why_choose_us .item {
-    background: #fff;
     text-align: center;
     padding: 30px 25px;
-    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+    background: rgba(176, 176, 176, 0.25);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 30px;
+
+    /* -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
     box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
     border:5px solid rgba(0, 0, 0, 0.07);
     margin-bottom: 30px;
     -webkit-transition: all .5s ease 0;
     transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; */
 }
 .why_choose_us .item:hover{
-    background:#f91942;
+        background: #74A82B !important;
     box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
     -webkit-transition: all .5s ease 0;
     transition: all .5s ease 0;
@@ -549,28 +561,28 @@ section {
     border-radius: 50px;
 }
 .why_choose_us .item .feature_box_col_one{
-    background:rgba(247, 198, 5, 0.20);
-    color:#f91942
+    background:#fff;
+    color:#000
 }
 .why_choose_us .item .feature_box_col_two{
-    background:rgba(255, 77, 28, 0.15);
-    color:#f91942
+    background:#fff;
+    color:#000
 }
 .why_choose_us .item .feature_box_col_three{
-    background:rgba(0, 147, 38, 0.15);
-    color:#f91942
+    background:#fff;
+    color:#000
 }
 .why_choose_us .item .feature_box_col_four{
-    background:rgba(0, 108, 255, 0.15);
-    color:#f91942
+    background:#fff;
+    color:#000
 }
 .why_choose_us .item .feature_box_col_five{
-    background:rgba(146, 39, 255, 0.15);
-    color:#f91942
+    background:#fff;
+    color:#000
 }
 .why_choose_us .item .feature_box_col_six{
-    background:rgba(23, 39, 246, 0.15);
-    color:#f91942
+    background:#fff;
+    color:#000
 }
 .why_choose_us .item p{
     font-size:15px;
@@ -578,7 +590,7 @@ section {
 }
 .why_choose_us .item h6 {
     margin-bottom:20px;
-    color:#2f2f2f;
+    /* color:#2f2f2f; */
 }
 .why_choose_us .mission p {
     margin-bottom: 10px;
