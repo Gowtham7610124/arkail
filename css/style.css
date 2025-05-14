@@ -1251,7 +1251,7 @@ border:0px;
 /* MISSION AND VISSION */
 #missionandvision {
   text-align: center;
-  background: #A149FA;
+  background: rgb(0 0 0 / 21%);
   max-width: 100%;
 }
 
@@ -1263,6 +1263,7 @@ border:0px;
   animation: missionheading;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+    color:#74A82B !important;
 }
 
 @keyframes missionheading {
@@ -1295,6 +1296,7 @@ border:0px;
   animation-delay: 1s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  color:#74A82B !important;
 }
 
 @keyframes visionheading {
@@ -1337,13 +1339,13 @@ border:0px;
     gap: 30px;
 }
 
-.value-card {
+/* .value-card {
     background: #ffffff;
     border-radius: 16px;
     padding: 30px 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
 .value-card:hover {
     transform: translateY(-5px);
@@ -1387,84 +1389,89 @@ border:0px;
 }
 
 .value-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 30px 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba( 68, 68, 68, 0.65 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .value-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 .value-icon {
-    font-size: 40px;
-    /* color: #457b5d; */
-    margin-bottom: 15px;
+  font-size: 40px;
+  /* color: #457b5d; */
+  margin-bottom: 15px;
 }
 
 .value-title {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .value-desc {
-    font-size: 0.95rem;
-    /* color: #555; */
+  font-size: 0.95rem;
+  /* color: #555; */
 }
 /* TRAC RECORD */
 .experience-section {
-    max-width: 1200px;
-    margin: auto;
-    padding: 60px 20px;
-    text-align: center;
-    /* background-color: #ffffff; */
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+  /* background-color: #ffffff; */
 }
 
 .experience-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    /* color: #2d4a22; */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  /* color: #2d4a22; */
 }
 
 .section-subtitle {
-    font-size: 1.1rem;
-    /* color: #666; */
-    margin-bottom: 40px;
+  font-size: 1.1rem;
+  /* color: #666; */
+  margin-bottom: 40px;
 }
 
 .experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
 }
 
 .experience-card {
-    background: #f8f6f2;
-    border-radius: 16px;
-    padding: 30px 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* background: #f8f6f2; */
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.966);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 .experience-number {
-    font-size: 2.5rem;
-    font-weight: bold;
-    /* color: #457b5d; */
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  /* color: #457b5d; */
+  margin-bottom: 10px;
 }
 
 .experience-label {
-    font-size: 1.1rem;
-    /* color: #333; */
+  font-size: 1.1rem;
+  /* color: #333; */
 }
 /* PROJECT */
 /* PROJECT LISTING */
@@ -1480,7 +1487,14 @@ border:0px;
     /* color: #2d4a22; */
     margin-bottom: 50px;
 }
+.filter-buttons button{
+  background-color: #4a4e44 !important;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
 
+}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1531,7 +1545,7 @@ border:0px;
 .project-btn {
     margin-top: 15px;
     text-decoration: none;
-    background-color: #457b5d;
+    background-color: #5f5f5f;
     color: white;
     padding: 10px 18px;
     border-radius: 8px;
@@ -1540,7 +1554,8 @@ border:0px;
 }
 
 .project-btn:hover {
-    background-color: #355f47;
+    background-color: #dcdcdc;
+    color: #000000;
 }
 /* AMMINITIES */
 /* Amenities grid */
@@ -1548,6 +1563,7 @@ border:0px;
   max-width: 1200px;
   margin: auto;
   padding: 60px 20px;
+  text-align: center;
 }
 
 .amenities-grid {
@@ -1604,16 +1620,19 @@ border:0px;
   display: inline-block;
   margin: 50px auto 0;
   padding: 14px 35px;
-  background: #2ecc71;
+  background: #74A82B;
   color: white;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
   transition: background 0.3s;
+  /* text-align: center; */
 }
 
 .brochure-btn:hover {
-  background: #27ae60;
+    background: #74A82B;
+  color: #dddddd;
+  transition: .5s;
 }
 
 /* Footer */
@@ -1688,7 +1707,26 @@ body {
   gap: 40px;
 }
 
-.contact-form, .contact-info {
+.contact-form{
+  flex: 1 1 45%;
+  background: rgb(113 113 113 / 20%);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.5px );
+-webkit-backdrop-filter: blur( 10.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.contact-info-div{
+  flex: 1 1 45%;
+  height: 100%;
+}
+.contact-info {
   flex: 1 1 45%;
   background: white;
   padding: 40px;
@@ -1697,6 +1735,11 @@ body {
   transition: all 0.3s ease;
   opacity: 0;
   transform: translateY(30px);
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: URL('https://lightleader.in/wp-content/uploads/2018/11/contactus-background-1024x566.png');
 }
 
 .contact-form h2, .contact-info h2 {
@@ -1710,10 +1753,11 @@ body {
   width: 100%;
   padding: 18px;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 12px;
   font-size: 1rem;
   transition: border 0.3s;
+  background-color: #222629;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -1724,7 +1768,7 @@ body {
 .contact-form button {
   padding: 15px;
   width: 100%;
-  background: var(--accent-color);
+  background: #74A82B;
   color: white;
   border: none;
   border-radius: 12px;
